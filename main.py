@@ -8,7 +8,8 @@ playlist_url = sys.argv[1]
 #     'quiet': True
 # }
 
-youtube_dl_manager = youtube_dl.YoutubeDL(ydl_opts)
+# youtube_dl_manager = youtube_dl.YoutubeDL(ydl_opts)
+youtube_dl_manager = youtube_dl.YoutubeDL()
 
 def get_urls(playlist_url):
     data = []
