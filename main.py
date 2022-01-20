@@ -17,7 +17,7 @@ def get_urls(playlist_url):
     x = youtube_dl_manager.extract_info(f"{playlist_url}", download=False)
     playlist_title = x['title']
     urls_numbers = len(x['entries'])
-    for count, i in enumerate(x['entries'][:3]):
+    for count, i in enumerate(x['entries']):
         data.append(
             {
                 'ID': f"{count + 1}",
